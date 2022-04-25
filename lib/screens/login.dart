@@ -1,5 +1,6 @@
-import 'package:ecommmerce2/screens/home.dart';
+
 import 'package:ecommmerce2/screens/signup.dart';
+import 'package:ecommmerce2/widgets/bottomBar.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {
@@ -89,7 +90,7 @@ class _LoginState extends State<Login> {
                   width: double.infinity,
                   child: TextButton(
                     onPressed: () {
-                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Home()));
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>BottomBar()));
                     },
                     child: Text(
                       'Login',

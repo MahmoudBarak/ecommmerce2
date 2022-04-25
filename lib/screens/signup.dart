@@ -1,7 +1,8 @@
-import 'package:flutter/cupertino.dart';
+import 'package:ecommmerce2/widgets/bottomBar.dart';
+
 import 'package:flutter/material.dart';
 
-import 'home.dart';
+
 
 class Signup extends StatefulWidget {
   const Signup({Key? key}) : super(key: key);
@@ -18,7 +19,7 @@ class _SignupState extends State<Signup> {
       resizeToAvoidBottomInset: false,
       body: Center(
         child: Container(
-          height: 500,
+          height: 600,
           width: 300,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,6 +45,19 @@ class _SignupState extends State<Signup> {
                   height: 100,
                 ),
               ),
+              SizedBox(
+                height: 20,
+              ),
+              Text('User name', style: TextStyle(fontWeight: FontWeight.bold)),
+              Container(
+                  margin: EdgeInsets.all(5),
+                  child: TextFormField(
+                    keyboardType: TextInputType.emailAddress,
+                    decoration: InputDecoration(
+                      hintText: 'Write your Name',
+                      border: OutlineInputBorder(),
+                    ),
+                  )),
               SizedBox(
                 height: 20,
               ),
@@ -100,7 +114,7 @@ class _SignupState extends State<Signup> {
                   width: double.infinity,
                   child: TextButton(
                     onPressed: () {
-                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Home()));
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>BottomBar()));
                     },
                     child: Text(
                       'Signup',

@@ -1,5 +1,4 @@
 import 'package:ecommmerce2/screens/login.dart';
-import 'package:ecommmerce2/screens/product.dart';
 import 'package:ecommmerce2/screens/signup.dart';
 import 'package:flutter/material.dart';
 
@@ -49,7 +48,7 @@ class Welcom extends StatelessWidget {
                 
                 width: double.infinity,
                 child: TextButton(
-                    onPressed: () { Navigator.push(context,MaterialPageRoute(builder:(context) =>Product() ));
+                    onPressed: () { Navigator.push(context,MaterialPageRoute(builder:(context) =>Signup() ));
                     },
                     child: Text('Signup', style: TextStyle(color: Colors.white)),
                     style: TextButton.styleFrom(backgroundColor: Colors.black)),

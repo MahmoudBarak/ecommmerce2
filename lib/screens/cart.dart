@@ -38,123 +38,10 @@ class _CartState extends State<Cart> {
 
             ],),
           ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Stack(alignment: Alignment.center,
-                  children: [
-
-
-                    Container(
-                      height: 100,
-                      width: 100,
-                      decoration:BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          color: Colors.grey.shade300
-                      ) ,
-                    ),
-                    Image.asset('assets/images/shooe_tilt_1.png',height: 200,width: 150,),
-
-
-                  ],),
-                Column(children: [
-                  Text('Nike Air Max 200',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
-                  Text('240\$',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),)
-                ],),
-                SizedBox(width: 30,),
-
-                Container(
-                    height: 50,
-                    width: 50,
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.grey.shade200),
-                    child: TextButton(onPressed: (){
-                      setState(() {
-                        _counter++;
-                      });
-                    }, child: Text("x${_counter.toString()}",style: TextStyle(fontWeight: FontWeight.bold ,color: Colors.black)),
-                    )
-
-
-                )],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Stack(alignment: Alignment.center,
-                  children: [
-
-
-                    Container(
-                      height: 100,
-                      width: 100,
-                      decoration:BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          color: Colors.grey.shade300
-                      ) ,
-                    ),
-                    Image.asset('assets/images/shoe_tilt_2.png',height: 200,width: 150,),
-
-
-                  ],),
-                Column(children: [
-                  Text('Nike Air Max 200',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
-                  Text('240\$',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),)
-                ],),
-                SizedBox(width: 30,),
-
-                Container(
-                    height: 50,
-                    width: 50,
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.grey.shade200),
-                    child: TextButton(onPressed: (){
-                      setState(() {
-                        _counter++;
-                      });
-                    }, child: Text("x${_counter.toString()}",style: TextStyle(fontWeight: FontWeight.bold ,color: Colors.black)),
-                    )
-
-
-                )],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Stack(alignment: Alignment.center,
-                  children: [
-
-
-                    Container(
-                      height: 100,
-                      width: 100,
-                      decoration:BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          color: Colors.grey.shade300
-                      ) ,
-                    ),
-                    Image.asset('assets/images/small_tilt_shoe_3.png',height: 200,width: 150,),
-
-
-                  ],),
-                Column(children: [
-                  Text('Nike Air Max 200',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
-                  Text('240\$',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),)
-                ],),
-                SizedBox(width: 30,),
-
-                Container(
-                    height: 50,
-                    width: 50,
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.grey.shade200),
-                    child: TextButton(onPressed: (){
-                      setState(() {
-                        _counter++;
-                      });
-                    }, child: Text("x${_counter.toString()}",style: TextStyle(fontWeight: FontWeight.bold ,color: Colors.black)),
-                    )
-
-
-                )],
-            ),
+            _itemcart(),
+            _itemcart(),
+            _itemcart(),
+            _itemcart(),
 
               ],
             ),
@@ -165,4 +52,46 @@ class _CartState extends State<Cart> {
 
     );
   }
+  Widget _itemcart(){
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        Stack(alignment: Alignment.center,
+          children: [
+
+
+            Container(
+              height: 100,
+              width: 100,
+              decoration:BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  color: Colors.grey.shade300
+              ) ,
+            ),
+            Image.asset('assets/images/shooe_tilt_1.png',height: 200,width: 150,),
+
+
+          ],),
+        Column(children: [
+          Text('Nike Air Max 200',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+          Text('240\$',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),)
+        ],),
+        SizedBox(width: 30,),
+
+        Container(
+            height: 50,
+            width: 50,
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: Colors.grey.shade200),
+            child: TextButton(onPressed: (){
+              setState(() {
+                _counter++;
+              });
+            }, child: Text("x${_counter.toString()}",style: TextStyle(fontWeight: FontWeight.bold ,color: Colors.black)),
+            )
+
+
+        )],
+    );
+  }
 }
+

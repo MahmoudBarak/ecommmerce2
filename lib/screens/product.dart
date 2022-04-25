@@ -19,10 +19,12 @@ class _ProductState extends State<Product> {
               Container(width: 30,height: 40,margin: EdgeInsets.all(10),decoration: BoxDecoration(
                   color: Colors.blueGrey.shade100,borderRadius: BorderRadius.circular(15)
               ),
-                  child: IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios))),
+                  child: IconButton(onPressed: (){
+                    Navigator.pop(context);
+                  }, icon: Icon(Icons.arrow_back_ios))),
               SizedBox(width:280,),
               IconButton(onPressed: (){
-                Navigator.pop(context);
+
               }, icon: Icon(Icons.favorite,color: Colors.red,))
 
 
